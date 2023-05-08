@@ -2,6 +2,7 @@
   "devDependencies": {
     "@cypress/code-coverage": "^3.10.4",
     "cypress": "^12.11.0",
+    "cypress-mochawesome-reporter": "^3.4.0",
     "playwright-webkit": "^1.33.0"
   },
   "name": "vectorwebassignment",
@@ -174,9 +175,9 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "npx cypress open",
-    "cy:run:chrome": "cypress open --browser chrome",
-    "cy:run:firefox": "cypress open --browser firefox"
+    "test-chrome": "npx cypress run --browser chrome --e2e",
+    "test-firefox": "npx cypress run --browser firefox --e2e",
+    "test-edge": "npx cypress run --browser edge --e2e"
   },
   "author": "Raghav Gupta",
   "license": "ISC"
